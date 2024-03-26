@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>groupChat</class>
+ <widget class="QWidget" name="groupChat">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>591</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>591</width>
+    <height>480</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>591</width>
+    <height>480</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QPlainTextEdit" name="sendTestEdit">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>350</y>
+     <width>601</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255,255,255);
+border: 1px solid gray;/*设置边框的粗细，以及颜色*/
+border-radius: 10px;/*设置圆角的大小*/
+padding: 0 8px;/*如果没有内容光标在开始往后移动0.8像素点*/
+selection-background-color: darkgray;</string>
+   </property>
+  </widget>
+  <widget class="QPlainTextEdit" name="readTestEdit">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>441</width>
+     <height>319</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255,255,255);
+border: 1px solid gray;/*设置边框的粗细，以及颜色*/
+border-radius: 10px;/*设置圆角的大小*/
+padding: 0 8px;/*如果没有内容光标在开始往后移动0.8像素点*/
+selection-background-color: darkgray;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="send">
+   <property name="geometry">
+    <rect>
+     <x>561</x>
+     <y>320</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 1.5px solid white;/*设置边框的粗细，以及颜色*/
+border-radius: 10px;/*设置圆角的大小*/
+padding: 0 8px;/*如果没有内容光标在开始往后移动0.8像素点*/
+selection-background-color: darkgray;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="myPix.qrc">
+     <normaloff>:/myPix/Pix/enter.png</normaloff>:/myPix/Pix/enter.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="more">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>320</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 1.5px solid white;/*设置边框的粗细，以及颜色*/
+border-radius: 10px;/*设置圆角的大小*/
+padding: 0 8px;/*如果没有内容光标在开始往后移动0.8像素点*/
+selection-background-color: darkgray;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="myPix.qrc">
+     <normaloff>:/myPix/Pix/more.png</normaloff>:/myPix/Pix/more.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="groupMembersList">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>0</y>
+     <width>152</width>
+     <height>319</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>152</width>
+     <height>319</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>152</width>
+     <height>319</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255,255,255);
+border: 1px solid gray;/*设置边框的粗细，以及颜色*/
+border-radius: 10px;/*设置圆角的大小*/
+padding: 0 8px;/*如果没有内容光标在开始往后移动0.8像素点*/
+selection-background-color: darkgray;</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="myPix.qrc"/>
+ </resources>
+ <connections/>
+</ui>

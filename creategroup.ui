@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>createGroup</class>
+ <widget class="QWidget" name="createGroup">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>301</width>
+    <height>483</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>301</width>
+    <height>483</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>301</width>
+    <height>483</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#createGroup
+{
+background-color: rgb(255,255,255);
+border: 1px solid gray;/*设置边框的粗细，以及颜色*/
+border-radius: 10px;/*设置圆角的大小*/
+padding: 0 8px;/*如果没有内容光标在开始往后移动0.8像素点*/
+selection-background-color: darkgray;
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="groupPix">
+       <property name="text">
+        <string>创建群组名</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="groupLineEdit">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255,255,255);
+border: 1px solid gray;/*设置边框的粗细，以及颜色*/
+border-radius: 5px;/*设置圆角的大小*/
+padding: 0 8px;/*如果没有内容光标在开始往后移动0.8像素点*/
+selection-background-color: darkgray;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QListWidget" name="invite_friend_list">
+     <property name="styleSheet">
+      <string notr="true">#invite_friend_list
+{
+background-color: rgb(255,255,255);
+border: 1px solid black;/*设置边框的粗细，以及颜色*/
+border-radius: 7px;/*设置圆角的大小*/
+padding: 0 8px;/*如果没有内容光标在开始往后移动0.8像素点*/
+}
+invite_friend_list::item:selected:selected
+{
+border: 1px solid grey;
+}
+</string>
+     </property>
+     <property name="selectionMode">
+      <enum>QAbstractItemView::MultiSelection</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="btns">
+     <property name="styleSheet">
+      <string notr="true">#btns
+{
+background-color: rgb(255,255,255);
+border: 1px solid gray;/*设置边框的粗细，以及颜色*/
+border-radius: 4px;/*设置圆角的大小*/
+padding: 0 8px;/*如果没有内容光标在开始往后移动0.8像素点*/
+selection-background-color: darkgray;
+}</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="offbtn">
+        <property name="text">
+         <string>off</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="okbtn">
+        <property name="text">
+         <string>ok</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

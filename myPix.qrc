@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/myPix">
+        <file>Pix/password.png</file>
+        <file>Pix/user.png</file>
+        <file>Pix/user1.png</file>
+        <file>Pix/password1.png</file>
+        <file>Pix/file.png</file>
+        <file>Pix/more.png</file>
+        <file>Pix/enter.png</file>
+    </qresource>
+</RCC>

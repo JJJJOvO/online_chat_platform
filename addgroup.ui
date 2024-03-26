@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>addGroup</class>
+ <widget class="QWidget" name="addGroup">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>245</width>
+    <height>155</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>245</width>
+    <height>155</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>245</width>
+    <height>155</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#addGroup
+{
+background-color: rgb(255,255,255);
+border: 1px solid gray;/*设置边框的粗细，以及颜色*/
+border-radius: 10px;/*设置圆角的大小*/
+padding: 0 8px;/*如果没有内容光标在开始往后移动0.8像素点*/
+selection-background-color: darkgray;
+}</string>
+  </property>
+  <widget class="QLabel" name="groupPix">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>30</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>群名</string>
+   </property>
+  </widget>
+  <widget class="QSplitter" name="splitter">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>90</y>
+     <width>148</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#splitter{
+background-color: rgb(255,255,255);
+border: 1px solid gray;/*设置边框的粗细，以及颜色*/
+border-radius: 10px;/*设置圆角的大小*/
+padding: 0 8px;/*如果没有内容光标在开始往后移动0.8像素点*/
+selection-background-color: darkgray;
+}</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <widget class="QPushButton" name="off">
+    <property name="text">
+     <string>OFF</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ok">
+    <property name="text">
+     <string>OK</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLineEdit" name="groupLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>30</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255,255,255);
+border: 1px solid gray;/*设置边框的粗细，以及颜色*/
+border-radius: 10px;/*设置圆角的大小*/
+padding: 0 8px;/*如果没有内容光标在开始往后移动0.8像素点*/
+selection-background-color: darkgray;</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

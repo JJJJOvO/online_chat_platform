@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>../../../Downloads/password.png</file>
+    </qresource>
+</RCC>

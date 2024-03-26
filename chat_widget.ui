@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>chat_widget</class>
+ <widget class="QWidget" name="chat_widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>380</width>
+    <height>542</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>380</width>
+    <height>542</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>380</width>
+    <height>542</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#chat_widget
+
+{
+background-color: white;
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="contextMenuPolicy">
+      <enum>Qt::DefaultContextMenu</enum>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+/* tabBar条的样式 */
+QTabWidget::tab-bar {
+    alignment: left;
+}
+/* tabBar上的tab按钮样式 */
+QTabBar::tab {
+background-color: qlineargradient(x1:0.5, y1:1, x2:0.5, y2:0, stop:0 rgb(253,250,250), stop:0.2 rgb(253,250,250), stop:1 rgb(255,249,234));
+border-top-left-radius: 7px;
+border-top-right-radius: 7px;
+min-width: 8ex;
+padding: 5px;
+font-family: KaiTi;
+font-size: 12px;
+min-width: 8ex;
+padding:2px 22px 2px 30px;
+}
+
+QTabBar::tab:selected {
+background: qlineargradient(x1:0.5, y1:1, x2:0.5, y2:0, stop:0 rgb(135,206, 255), stop:0.2 rgb(135,206, 255) stop:1 rgb(135,206, 255));
+  color: white;
+
+}
+QTabBar::tab:!selected {
+margin-top: 1.5px;
+background: qlineargradient(x1:0.5, y1:1, x2:0.5, y2:0, stop:0 rgb(253,250,250), stop:0.2 rgb(253,250,250), stop:1 rgb(250,244,229));
+color: rgb(93, 109, 109)
+}
+/* 整个tabBar下的区域（不带tabBar菜单按钮条部分 */
+QTabWidget::pane { /* The tab widget frame */
+	font-size: 14px;
+    border: 5px solid #BFEFFF;
+	border-radius:5px;
+    position: absolute;
+
+}
+</string>
+     </property>
+     <property name="tabPosition">
+      <enum>QTabWidget::North</enum>
+     </property>
+     <property name="tabShape">
+      <enum>QTabWidget::Rounded</enum>
+     </property>
+     <property name="currentIndex">
+      <number>1</number>
+     </property>
+     <property name="documentMode">
+      <bool>false</bool>
+     </property>
+     <property name="tabsClosable">
+      <bool>false</bool>
+     </property>
+     <property name="movable">
+      <bool>false</bool>
+     </property>
+     <property name="tabBarAutoHide">
+      <bool>false</bool>
+     </property>
+     <widget class="QWidget" name="tab_3">
+      <property name="styleSheet">
+       <string notr="true">#tab_3
+{
+background-color: #B0E0E6
+
+}</string>
+      </property>
+      <attribute name="title">
+       <string>好友</string>
+      </attribute>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QListWidget" name="friend_list">
+         <property name="styleSheet">
+          <string notr="true">#friend_list
+{
+background-color: rgb(255,255,255);
+border: 1px solid gray;/*设置边框的粗细，以及颜色*/
+border-radius: 10px;/*设置圆角的大小*/
+padding: 0 8px;/*如果没有内容光标在开始往后移动0.8像素点*/
+}
+
+
+</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_4">
+      <property name="styleSheet">
+       <string notr="true">#tab_4
+{
+background-color: #B0E0E6
+
+}</string>
+      </property>
+      <attribute name="title">
+       <string>群聊</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QListWidget" name="group_list">
+         <property name="styleSheet">
+          <string notr="true">#group_list
+{
+background-color: rgb(255,255,255);
+border: 1px solid gray;/*设置边框的粗细，以及颜色*/
+border-radius: 10px;/*设置圆角的大小*/
+padding: 0 8px;/*如果没有内容光标在开始往后移动0.8像素点*/
+}
+</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="btns">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#btns
+{
+background-color: rgb(255,255,255);
+border: 1px solid gray;/*设置边框的粗细，以及颜色*/
+border-radius: 10px;/*设置圆角的大小*/
+padding: 0 8px;/*如果没有内容光标在开始往后移动0.8像素点*/
+selection-background-color: darkgray;
+}</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QPushButton" name="create_group_button">
+        <property name="text">
+         <string>创建群组</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="add_group_button_">
+        <property name="text">
+         <string>添加群组</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="add_friend_button">
+        <property name="text">
+         <string>添加好友</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
